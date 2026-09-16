@@ -1,0 +1,32 @@
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Health Dashboard 7 วัน</title>
+<style>
+body{font-family:system-ui,-apple-system,sans-serif;background:#f6f7fb;color:#222;margin:0;padding:24px}.wrap{max-width:1050px;margin:auto}h1{margin:0 0 4px}.muted{color:#6b7280;margin-bottom:20px}.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card,.panel{background:white;border:1px solid #e6e8ed;border-radius:16px;padding:18px}.label{color:#6b7280;font-size:14px}.num{font-size:28px;font-weight:700;margin-top:6px}.charts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}.title{font-weight:700;margin-bottom:12px}canvas{width:100%;height:280px;border:1px solid #eee;border-radius:10px}table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:11px;border-bottom:1px solid #eee}th{color:#6b7280;font-size:13px}@media(max-width:700px){.kpis,.charts{grid-template-columns:1fr 1fr}}@media(max-width:480px){.kpis,.charts{grid-template-columns:1fr}}
+</style></head><body><div class="wrap">
+<h1>สุขภาพส่วนตัว — 7 วัน</h1><div class="muted">7–13 กันยายน • น้ำหนักตัว 45 กก.</div>
+<div class="kpis">
+<div class="card"><div class="label">วันออกกำลังกาย</div><div class="num">0 วัน</div></div>
+<div class="card"><div class="label">เวลารวม</div><div class="num">0 นาที</div></div>
+<div class="card"><div class="label">นอนเฉลี่ย</div><div class="num">5.6 ชม.</div></div>
+<div class="card"><div class="label">น้ำเฉลี่ย</div><div class="num">1.3 ลิตร</div></div></div>
+<div class="charts">
+<div class="panel"><div class="title">แนวโน้มชั่วโมงนอน</div>
+<svg viewBox="0 0 700 300" width="100%" height="280" role="img" aria-label="กราฟแนวโน้มชั่วโมงนอน">
+<line x1="55" y1="25" x2="55" y2="245" stroke="#aaa"/><line x1="55" y1="245" x2="680" y2="245" stroke="#aaa"/>
+<polyline points="55,80 159,108 263,135 367,108 471,190 575,162 680,108" fill="none" stroke="#6b7280" stroke-width="4"/>
+<g fill="#333" font-size="14" text-anchor="middle"><text x="55" y="270">7 ก.ย.</text><text x="159" y="270">8 ก.ย.</text><text x="263" y="270">9 ก.ย.</text><text x="367" y="270">10 ก.ย.</text><text x="471" y="270">11 ก.ย.</text><text x="575" y="270">12 ก.ย.</text><text x="680" y="270">13 ก.ย.</text></g>
+<g fill="#666" font-size="13"><text x="20" y="30">8</text><text x="20" y="140">4</text><text x="20" y="250">0</text></g></svg></div>
+<div class="panel"><div class="title">แนวโน้มปริมาณน้ำ</div>
+<svg viewBox="0 0 700 300" width="100%" height="280" role="img" aria-label="กราฟแนวโน้มปริมาณน้ำ">
+<line x1="55" y1="25" x2="55" y2="245" stroke="#aaa"/><line x1="55" y1="245" x2="680" y2="245" stroke="#aaa"/>
+<polyline points="55,80 159,80 263,135 367,135 471,80 575,135 680,80" fill="none" stroke="#6b7280" stroke-width="4"/>
+<g fill="#333" font-size="14" text-anchor="middle"><text x="55" y="270">7 ก.ย.</text><text x="159" y="270">8 ก.ย.</text><text x="263" y="270">9 ก.ย.</text><text x="367" y="270">10 ก.ย.</text><text x="471" y="270">11 ก.ย.</text><text x="575" y="270">12 ก.ย.</text><text x="680" y="270">13 ก.ย.</text></g>
+<g fill="#666" font-size="13"><text x="12" y="30">2.0</text><text x="12" y="140">1.0</text><text x="20" y="250">0</text></g></svg></div></div>
+<div class="panel"><div class="title">กิจกรรมแต่ละวัน</div><table><tr><th>วันที่</th><th>กิจกรรม</th><th>เวลา</th><th>นอน</th><th>น้ำ</th></tr>
+<tr><td>7 ก.ย.</td><td>วิ่ง</td><td>0 นาที</td><td>7 ชม.</td><td>1.5 ลิตร</td></tr>
+<tr><td>8 ก.ย.</td><td>ปั่นจักรยาน</td><td>0 นาที</td><td>6 ชม.</td><td>1.5 ลิตร</td></tr>
+<tr><td>9 ก.ย.</td><td>วิ่ง</td><td>0 นาที</td><td>5 ชม.</td><td>1.0 ลิตร</td></tr>
+<tr><td>10 ก.ย.</td><td>วิ่ง</td><td>0 นาที</td><td>6 ชม.</td><td>1.0 ลิตร</td></tr>
+<tr><td>11 ก.ย.</td><td>วิ่ง</td><td>0 นาที</td><td>4 ชม.</td><td>1.5 ลิตร</td></tr>
+<tr><td>12 ก.ย.</td><td>วิ่ง</td><td>0 นาที</td><td>5 ชม.</td><td>1.0 ลิตร</td></tr>
+<tr><td>13 ก.ย.</td><td>วิ่ง</td><td>0 นาที</td><td>6 ชม.</td><td>1.5 ลิตร</td></tr></table></div></div>
+</body></html>
